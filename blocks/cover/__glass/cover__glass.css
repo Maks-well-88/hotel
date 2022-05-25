@@ -1,0 +1,5 @@
+.cover__glass {
+  position: absolute;
+  background-color: rgba(237, 218, 11, 0.4);
+  z-index: 1;
+}

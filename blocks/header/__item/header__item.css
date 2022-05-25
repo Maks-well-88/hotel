@@ -1,0 +1,12 @@
+.header__item {
+  text-decoration: none;
+  color: black;
+}
+
+.header__item:nth-last-of-type(2n) {
+  margin: 0 30px;
+}
+
+.header__item:hover {
+  border-bottom: 3px solid rgb(30, 26, 26);
+}
