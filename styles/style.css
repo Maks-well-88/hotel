@@ -1,0 +1,115 @@
+@keyframes move {
+  from {
+    transform: scale(1);
+  } to {
+    transform: scale(1.3);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* БЛОК CONTAINER */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__section {
+  padding-top: 30px;
+}
+
+/* БЛОК HEADER */
+
+.header {
+  width: 80%;
+  min-height: 30px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.header__logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.header__navigation {
+  font-family: Arial, Helvetica, sans-serif;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.header__item {
+  text-decoration: none;
+  color: black;
+}
+
+.header__item:nth-last-of-type(2n) {
+  margin: 0 30px;
+}
+
+.header__item:hover {
+  border-bottom: 3px solid rgb(30, 26, 26);
+}
+
+/* БЛОК DESCRIPTION */
+
+.description {
+  width: 80%;
+  margin: 0 auto;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.info__title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 55px;
+  font-weight: bold;
+  width: 430px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-left: 15px;
+}
+
+/* БЛОК COVER */
+
+.cover {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.cover__image {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  z-index: 0;
+}
+
+.cover__glass {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(237, 218, 11, 0.4);
+  z-index: 1;
+}
+
+.cover__image, .cover__glass {
+  animation: move 10s linear alternate infinite;
+}
