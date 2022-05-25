@@ -24,3 +24,9 @@
 
 /* TRANSFORM-SCALE */
 @import url('../blocks/transform-scale/transform-scale.css');
+
+/* FOOTER */
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/footer/__address/footer__address.css');
+@import url('../blocks/footer/__image/address__image.css');
+@import url('../blocks/footer/__link/address__link.css');
